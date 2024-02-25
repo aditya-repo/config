@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # update the packages [Update Package List] 
-sudo apt update
-sudo apt upgrade
+sudo apt update upgrade
+sudo apt
 
 # step 2 [Install Dependencies]
 sudo apt-get install build-essential
@@ -19,8 +19,7 @@ sudo tar xvf asterisk-20-current.tar.gz
 # step 5 [Compile Asterisk]
 cd asterisk-20*/
 sudo contrib/scripts/get_mp3_source.sh
-sudo apt-get install libedit-dev
-sudo apt-get install libjansson-dev
+sudo apt-get install libedit-dev libjansson-dev
 sudo ./configure
 sudo make menuselect
 
